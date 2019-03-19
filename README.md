@@ -13,7 +13,7 @@ bulk_WT_TLR10_T4_log2_data.mat
 bulk_WT_TLR10_T8_log2_data.mat
 
 Instructions: 
-Unzip the code_algorithm.zip file and run the Matlab script from this directory. 
+Unzip the dynamic_deconvolution_algorithm.zip file and run the Matlab script from this directory. 
 
 Running the code:
 The function deconvolution_algorithm.m get as input the name of the .mat file with the bulk RNA-seq data.
