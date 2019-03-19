@@ -18,7 +18,7 @@ Unzip the dynamic_deconvolution_algorithm.zip file and run the Matlab script fro
 Running the code:
 The function deconvolution_algorithm.m get as input the name of the .mat file with the bulk RNA-seq data.
 The function outputs the estimators of each cell type frequency (k) and cell type infection-induced states (s) for each bulk RNA-seq sample. 
-Example to run the code:  [k_cell_type_freq,s_cell_type_activation]=deconvolution_algorithm('bulk_WT_TLR10_T0_log2_data');
+Example to run the code:  [k_cell_type_freq,s_cell_type_inf_induced_state]=deconvolution_algorithm('bulk_WT_TLR10_T0_log2_data');
 
 The .mat file with the bulk RNA-seq data should contain 3 variables - 
 1) exp_data: matrix with the log2 normalized expression data (row for each gene and column for each sample; size: #genes x #samples)
@@ -31,7 +31,7 @@ The code generates two output files:
 
 To run the code on a small dataset as demo:
 Run the deconvolution_algorithm.m script with the input file small_dataset_to_demo.mat, or write as input ‘demo’ instead of the .mat file name.
-e.g. [k_cell_type_freq,s_cell_type_activation]=deconvolution_algorithm('demo') ;
+e.g. [k_cell_type_freq,s_cell_type_inf_induced_state]=deconvolution_algorithm('demo') ;
 
 
 To reproduced the data presented at the manuscript:
